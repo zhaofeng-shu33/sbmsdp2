@@ -15,6 +15,6 @@ jobs:
       - name: install deps
         shell: bash -l {0}
         run: conda install numpy=1.19.1 scikit-learn=0.23.2 networkx=2.5
-      - name: run grading
+      - name: run test
         shell: bash -l {0}
         run: python test.py
