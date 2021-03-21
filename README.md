@@ -1,8 +1,8 @@
-# SBMSDP
-Using semi-definite programming to recover labels of stochastic block model
+# SBMSDP2
+This repository uses semi-definite programming to recover labels of stochastic block model.
 
 ## Note
-This repo can only recover symmetric SBM with two underlining communities.
+The code in this repository can only recover symmetric SBM with two underlining communities.
 Symmetric SBM means that the two communities have equal size.
 
 The SBM generator is $\textrm{SBM}(n, \frac{a \log n}{n}, \frac{b \log n}{n})$.
@@ -14,3 +14,5 @@ G = sbm2(100, 16, 4)
 X = sdp2(G)
 print(X)
 ```
+
+## Reference
