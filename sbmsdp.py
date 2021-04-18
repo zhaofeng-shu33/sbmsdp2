@@ -15,13 +15,13 @@ def sbm2(n, a, b):
     return nx.generators.community.stochastic_block_model(sizes, p)
 
 def sdp2(G, kappa=1.0, rho = 0.1, max_iter = 1000, tol=1e-4):
-    '''works only for two communties
+    """Recover node labels of SBM with two communties by SDP.
 
     Parameters
-    ==========
-    rho: ADMM penalty parameter
+    ----------
+    rho : ADMM penalty parameter
     
-    '''
+    """
     B = _construct_B(G, kappa)
     n = len(G.nodes)
     X = np.zeros([n, n])
